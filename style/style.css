@@ -1,0 +1,324 @@
+/*FONTS*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;700&family=Paytone+One&family=Poppins:wght@400;500;600;700;800;900&display=swap');
+/*VARIABLES*/
+:root {
+    --primary--color : #5CB85F;
+    --drak--color :#0f0f0f;
+    --gray-color : gray;
+    --h1--fontsize : 40px;
+    --h2--fontsize : 32px;
+    --small-size : 14px;
+
+}
+/*RESET css*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+a{
+    text-decoration: none;
+}
+/*global CSS*/
+section{
+    padding: 50px 0;
+}
+section .section-title{
+    font-size: var(--h2--fontsize);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.btn-orange {
+    background-color: var(--primary--color);
+    color: white;
+    border-radius: 40px;
+}
+.btn-orange:hover{
+background-color: #16df7e;
+}
+.text-orange {
+    color: var(--primary--color);
+}
+.text-dark{
+    color: var(--drak--color);
+}
+.fs-7{
+    font-size: var(--small-size);
+}
+.form-control:focus{
+box-shadow: none;
+border-color: var(--primary--color);
+}
+/*CSS PER SECTION*/
+
+/*navbar*/
+#navbar{
+    background: #F1F3FF;
+}
+.navbar a{
+	font-weight: 500;
+	padding: 10px 15px;
+	border-radius: 4px;
+	transition: ease .40s;
+}
+.navbar a:hover{
+	background: #edf0f1;
+	color: var(--text-color);
+	box-shadow: 5px 10px 30px rgb(85 85 85 / 20%);
+	border-radius: 4px;
+}
+.navbar .nav-item .nav-link:hover,
+.navbar .nav-item .nav-link.active{
+ color: var(--primary--color);
+}
+.navbar .navbar-brand::first-letter{
+font-size: 38px;
+color: var(--primary--color);
+}
+#menu-icon{
+	color: var(--bg-color);
+	font-size: 35px;
+	z-index: 10001;
+	cursor: pointer;
+	display: none;
+}
+/*Header*/
+#hero {
+    width: 100%;
+    height: 80vh;
+    background:#F1F3FF;
+    padding-top: 82px;
+  }
+  
+  #hero h1 {
+    margin: 0;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+    color: #3e4450;
+  }
+  #hero h1::first-letter{
+    font-size: 60px;
+    color: var(--primary--color);
+  }
+  
+  #hero h2 {
+    color: #858ea1;
+    margin: 10px 0 30px 0;
+    font-size: 24px;
+  }
+  
+  #hero .btn-get-started {
+    font-family: "Raleway", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 30px 10px 30px;
+    border-radius: 4px;
+    transition: 0.5s;
+    color: #fff;
+    background: var(--primary--color);
+    box-shadow: 0 8px 28px rgba(22, 223, 126, 0.45);
+  }
+  
+  #hero .btn-get-started:hover {
+    background: #16df7e;
+    box-shadow: 0 8px 28px rgba(32, 107, 251, 0.45);
+  }
+  
+  #hero .animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+  }
+  @media (max-width: 991px) {
+    #hero {
+      height: 100vh;
+    }
+  
+    #hero .animated {
+      animation: none;
+    }
+  
+    #hero .hero-img {
+      text-align: center;
+    }
+  
+    #hero .hero-img img {
+      width: 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #hero {
+      height: auto;
+    }
+  
+    #hero h1 {
+      font-size: 28px;
+      line-height: 36px;
+    }
+  
+    #hero h4 {
+      font-size: 18px;
+      line-height: 24px;
+      margin-bottom: 30px;
+    }
+  
+    #hero .hero-img img {
+      width: 70%;
+    }
+    #why .card{
+      margin:0 auto;
+    }
+  }
+  
+  @media (max-width: 575px) {
+    #hero .hero-img img {
+      width: 80%;
+    }
+    .question #Qlist{
+      width: 20rem;
+    }
+  }
+  @media (max-width: 400px){
+    .testimonial-section .card-body{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+  }
+  
+  @keyframes up-down {
+    0% {
+      transform: translateY(10px);
+    }
+  
+    100% {
+      transform: translateY(-10px);
+    }
+  }
+  /*Our Us*/
+  .our-section .out-title{
+    font-size: var(--h2--fontsize);
+  }
+  .our-section .our-us{
+    color: var(--drak--color);
+  }
+  .our-section .our-us:hover{
+    color: var(--primary--color);
+  }
+  .our-section .our-us i {
+    background: #CFD4ED;
+    transition: .3s;
+   border-radius: 50px;
+   color: black;
+  }
+  .our-section .our-us:hover i {
+    transform: rotate(-45deg);
+  }
+  .our-section .our-img{
+    width: 85%;
+    border-radius: 20px;
+    margin: 5%;
+  }
+  .our-section .skill:hover{
+    filter: brightness(70%) hue-rotate(7deg);
+	  transform: scale(1.04);
+  }
+    /*Why Use*/
+#why .col-xl-3{
+      position: relative;
+      transition: all .3s cubic-bezier(.445,.05,.55,.95);
+      will-change: filter;
+      cursor: pointer;
+      border-radius: 20px;
+  }
+  #why .col-xl-3:hover{
+      filter: brightness(60%) hue-rotate(5deg);
+      transform: scale(1.04);
+  }
+  #why  img {
+width: 6em;
+padding: 20px;
+   
+  }
+  /*testimonial*/
+  .testimonial-section .card-body{
+    background: #F1F3FF;
+  }
+  .testimonial-section .card-body i{
+    color: #F9CC00;
+  }
+  .testimonial-section .card-img-top{
+    height:25%;
+    width: 25%;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .testimonial-section .button-n{
+    background: #16df7e;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50px;
+    border: none;
+  }
+   /*FAQ*/
+   .cta {
+    background:#0D28A6;
+    background-size: cover;
+    padding: 60px 0;
+    margin: 50px;
+    border-radius: 20px;
+  }
+  
+  .cta h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  
+  .cta p {
+    color: #fff;
+  }
+  
+  .cta .cta-btn {
+    background: var(--primary--color);
+    font-family: "Raleway", sans-serif;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 4px;
+    transition: 0.5s;
+    margin-top: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+  }
+  
+  .cta .cta-btn:hover {
+    background: #0D28A6;
+    border-color: #fff;
+  }
+  #iconFaq i {
+    text-align: center;
+    width: 2rem;
+    height: 2rem;
+    background:#0D28A6;
+    transition: .3s;
+   border-radius: 100px;
+   color: white;
+  border: 10px;
+  padding-top: 5px;
+  }
+  #iconFaq i:hover {
+    transform: rotate(-45deg);
+  }
